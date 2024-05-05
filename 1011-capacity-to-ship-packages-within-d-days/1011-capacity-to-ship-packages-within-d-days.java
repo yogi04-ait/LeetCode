@@ -10,7 +10,7 @@ class Solution {
         }
 
         
-        while(start < end){
+        while(start <= end){
             int mid = start + (end-start)/2;
             int sum =0;
             int pieces = 1;
@@ -29,12 +29,12 @@ class Solution {
                 start = mid+1;
             }
             else{
-                end = mid;
+                end = mid-1;
             }
 
         }
 
-        return end;
+        return start;
 
     }
 
